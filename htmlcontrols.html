@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form name="form1" action="first.html" method="POST">
+        select your favorite color: <input type="color" name="favcolor"><br>
+        Birthday: <input type="date" name="bday"><br>
+        Birthday (date and time): <input type="datetime-local" name="bdaytime"><br>
+        Enter a date before 1980-01-01:
+        <input type="date" name="bday" max="1979-12-31"><br>
+        Enter a date after 2000-01-01:<input type="date" name="bday" min="2000-01-02"><br>
+        seleect a time: <input type="time" name="usr_time"><br>
+        Quantity (between 1 and 5): <input type="number" name="Quantity" min="1" max="5"><br>
+        points min1: <input type="range" name="points" min="1" max="10">max 10<br>
+        number <input type="number" name="points" step="3"><br>
+        search google: <input type="search" name="foogle search"><br>
+        telphone: <input type="tel" name="usrtel"><br>
+        add your home page: <input type="url" name="homepage"><br>
+        select a week: <input type="week" name="year-week"><br>
+        select a browser: <input list="browser" name="browser">
+
+        <datalist id="browser">
+            <option value="Internet explorer">
+            <option value="Firefox">
+            <option value="chrome">
+        </datalist><br>
+        Username: <input type="text" name="usr_name" placeholder="enetr username" required><br>
+        first name:<input type="text" name="fname" autofocus><br>
+        email: <input type="email" name="email" autocomplete="off"><br>
+        country code: <input type="text" name="cntrycode" pattern="[A-Za-z]{3}" title="Three letter counrty code">
+        <input type="image" src="smile.jpg" alt="submit" width="48" height="48" formaction="demo.html">
+        <input type="submit" value="submit"><br>
+        <input type="submit" formaction="forms.html" value="submit as admin">
+    </form>
+    lastnem: <input type="text" name="lname" form="form1"><br>
+</body>
+
+</html>
