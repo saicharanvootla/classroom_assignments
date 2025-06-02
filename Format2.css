@@ -1,0 +1,22 @@
+body {
+    font-family: monospace;
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: yellow;
+}
+
+table {
+    background-color: palevioletred;
+    width: 60%;
+    margin: auto;
+    border: 2px solid yellowgreen;
+}
+
+td {
+    padding: 12px;
+    text-align: left;
+}
