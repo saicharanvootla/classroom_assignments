@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee Form</title>
+    <link rel="stylesheet" type="text/css" href="Format1.css" id="style" />
+    <script src="./scriptvalidation.js"></script>
+</head>
+
+<body>
+    <h1>EMPLOYEE DETAILS FORM</h1>
+    <table border="2" align="center" cellPadding="20">
+        <form action="" method="POST" action="scriptvalidation.js">
+            <div class="setFormat" align="center">
+                <input type="radio" id="style1" name="style" onClick="changeFormat(1)">Format 1
+                <input type="radio" id="style2" name="style" onClick="changeFormat(2)">Format 2
+                <input type="radio" id="style3" name="style" onClick="changeFormat(3)">Format 3
+            </div>
+            <th colspan="2">1.Personal Details of Employee:</th>
+            <tr>
+                <td>EMP ID:</td>
+                <td><input type="text" id="empid" name="empid" value="" size="20" align="center" /></td>
+            </tr>
+            <tr>
+                <td>first name:</td>
+                <td><input type="text" id="fname" name="fname" value="" size="20" align="center" /></td>
+            </tr>
+            <tr>
+                <td>last name:</td>
+                <td><input type="text" id="lname" name="lname" value="" size="20" align="center" /></td>
+            </tr>
+            <tr>
+                <td>email id:</td>
+                <td><input type="email" id="email" name="mail" value="" size="20" align="center" /></td>
+            </tr>
+            <tr>
+                <td>phone number</td>
+                <td><input type="number" id="num" name="num" value="" size="20" align="center" /></td>
+            </tr>
+
+        </form>
+    </table>
+    <button type="button" onclick="fetchUserInputs()">submit</button>
+    <script>
+        function fetchUserInputs() {
+            let empId = document.getElementById("empid").value;
+            if (empId === "") {
+                alert("Please enter a valid Employee ID.");
+                return false;
+            }
+            let email = document.getElementById("email").value;
+            if (email === "") {
+                alert("Please enter a valid Email.");
+                return false;
+            }
+            let phno = document.getElementById("num").value;
+            if (phno === "") {
+                alert("Please enter a phone number");
+                return false;
+            }
+            let inputs = document.querySelectorAll("input[type='text'],input[type='number']");
+            let userData = {};
+            inputs.forEach(input => {
+                userData[input.name] = input.value;
+            });
+            console.log("User Input Data:", userData);
+            document.write("User Inputs:\n" + JSON.stringify(userData, null, 2));
+            return true;
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
