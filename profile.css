@@ -1,0 +1,32 @@
+.container {
+    background-color: lightblue;
+    margin: 0.5cm;
+    padding: 1cm;
+    border: 1.5mm;
+    border-style: solid;
+    border-color: black;
+}
+
+.photo {
+    height: 2.5cm;
+    width: 1.8cm;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h1,
+h3,
+h2,
+p,
+li {
+    color: black;
+}
+
+h3,
+p,
+li {
+    font-family: sans-serif;
+    font-style: italic;
+}
