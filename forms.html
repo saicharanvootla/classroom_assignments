@@ -1,0 +1,41 @@
+<html>
+<form name="contactusForm" method="get" action="first.html">
+    <table>
+        <tr>
+            <td>EMp id#: </td>
+            <td><input type="text" name="idtxt" size="65" value="" /></td>
+        </tr>
+        First name: <input type="text" name="fnameTxt" size="75" value="" /><br />
+        Last name: <input type="text" name="lname" size="35" value="" /> <br />
+        dept no#: <input type="text" name="dept" size="35" value="" /><br />
+        start date#: <input type="text" name="sdate" size="35" value="" /><br />
+        salary#: <input type="text" name="salary" size="35" value="" /><br />
+        <tr>
+            <td>Gender: </td>
+            <td><input type="radio" name="Gender" value="male">Male
+                <input type="radio" name="Gender" value="Female">Female
+            </td>
+        </tr>
+        Field :<br>
+        <input type="checkbox" name="vehicle" value="Bike">IMS<br>
+        <input type="checkbox" name="vehicle" value="Car">BFS<br>
+        Question?/Comment: <textarea name="query" cols="40" rows="7" value=""></textarea>
+        <p />
+        password: <input type="password" name="pwd" value="" /><br>
+        confirm password: <input type="password" name="cpwd" value="" /><br>
+        upload resume: <input type="file" name="resume" accept="file\*" size="3" value="" /><br />
+        upload image: <input type="file" accept="image\*" name="photo" /><br /><br />
+        cars:<select name="cars">
+            <option value="volvo">volvo</option>
+            <option value="fiat">fiat</option>
+            <option value="audi">audi</option>
+            <option value="benz">benz</option>
+        </select><br />
+        <br />
+        <input type="reset" name="rstbtn" size="35" value="reset" />
+        <input type="submit" name="submitBtn" size="35" value="submit" />
+        <input type="button" value="Needhelp" />
+    </table>
+</form>
+
+</html>
